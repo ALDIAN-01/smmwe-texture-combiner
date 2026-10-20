@@ -563,12 +563,23 @@
     .resource-image {
       display: block;
       width: 100%;
-      height: 136px;
       margin: -2px 0 14px;
       border: 1px solid rgba(255, 255, 255, 0.35);
       border-radius: 8px;
       background: #11140f;
       object-fit: cover;
+    }
+
+    .resource-image--banner {
+      height: 160px;
+    }
+
+    .resource-image--logo {
+      width: min(100%, 180px);
+      aspect-ratio: 1;
+      height: auto;
+      margin: -2px auto 14px;
+      object-fit: contain;
     }
 
     .video-frame,
@@ -746,7 +757,11 @@
       }
 
       .resource-image {
-        height: 156px;
+        height: auto;
+      }
+
+      .resource-image--banner {
+        height: 180px;
       }
 
       .panel-inside {
@@ -962,7 +977,7 @@
           <h2 id="texture-catalog-title" data-site-i18n="resources.catalog">Catálogo de texturas actualizadas</h2>
           <div class="content-grid">
             <article class="content-card">
-              <img class="resource-image" src="images/resources/1catalogotexturas.png" alt="Catálogo de paquetes de texturas" data-site-i18n-attr="alt:resources.catalogAlt">
+              <img class="resource-image resource-image--banner" src="images/resources/1catalogotexturas.png" alt="Catálogo de paquetes de texturas" data-site-i18n-attr="alt:resources.catalogAlt">
               <h3 data-site-i18n="resources.catalogCard">Paquetes y actualizaciones</h3>
               <p data-site-i18n="resources.catalogDescription">Consulta los paquetes de texturas disponibles y sus actualizaciones en la comunidad.</p>
               <a class="resource-button" href="https://discord.com/channels/1009208148592177243/1417685562856312892" target="_blank" rel="noopener noreferrer" data-site-i18n="resources.catalogButton">Ver catálogo en Discord</a>
@@ -974,7 +989,7 @@
           <h2 id="creator-resources-title" data-site-i18n="resources.creators">Recursos para creadores</h2>
           <div class="content-grid">
             <article class="content-card">
-              <img class="resource-image" src="images/resources/2texturetemplate.png" alt="Plantilla de texturas originales" data-site-i18n-attr="alt:resources.templateAlt">
+              <img class="resource-image resource-image--banner" src="images/resources/2texturetemplate.png" alt="Plantilla de texturas originales" data-site-i18n-attr="alt:resources.templateAlt">
               <h3 data-site-i18n="resources.template">Plantilla de texturas originales</h3>
               <p data-site-i18n="resources.templateDescription">Accede a la plantilla de texturas originales para utilizarla como base de tus propias creaciones.</p>
               <a class="resource-button" href="https://discord.com/channels/1009208148592177243/1223201270165147709/1421193969731112961" target="_blank" rel="noopener noreferrer" data-site-i18n="resources.templateButton">Abrir plantilla en Discord</a>
@@ -991,13 +1006,13 @@
           <h2 id="community-title" data-site-i18n="resources.community">Comunidad</h2>
           <div class="content-grid">
             <article class="content-card">
-              <img class="resource-image" src="images/resources/6discordlogo.png" alt="Logo de Discord" data-site-i18n-attr="alt:resources.discordAlt">
+              <img class="resource-image resource-image--logo" src="images/resources/6discordlogo.png" alt="Logo de Discord" data-site-i18n-attr="alt:resources.discordAlt">
               <h3>Discord — Engine Kingdom</h3>
               <p data-site-i18n="resources.discord">Acceso a la comunidad de Engine Kingdom.</p>
               <a class="resource-button" href="https://discord.gg/enginekingdom" target="_blank" rel="noopener noreferrer" data-site-i18n="resources.discordButton">Unirse a Discord</a>
             </article>
             <article class="content-card">
-              <img class="resource-image" src="images/resources/7youtubelogo.png" alt="Logo de YouTube y World Engine Academy" data-site-i18n-attr="alt:resources.youtubeAlt">
+              <img class="resource-image resource-image--logo" src="images/resources/7youtubelogo.png" alt="Logo de YouTube y World Engine Academy" data-site-i18n-attr="alt:resources.youtubeAlt">
               <h3>YouTube — World Engine Academy</h3>
               <p data-site-i18n="resources.youtube">Canal de World Engine Academy.</p>
               <a class="resource-button" href="https://www.youtube.com/@WorldEngineAcademy" target="_blank" rel="noopener noreferrer" data-site-i18n="resources.youtubeButton">Visitar YouTube</a>
